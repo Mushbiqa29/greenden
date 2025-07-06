@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenDen Decor</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+<!-- AOS Scroll Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+ <!-- Preloader -->
+  <div id="preloader">
+    <canvas id="leafCanvas" width="500" height="500" top="50%" left="55%"></canvas>
+    <h1 id="logo-text" style="position:relative;bottom:200px;">Green<span class="text-black">Den</span></h1>
+  </div>
+  <!-- Navbar -->
+  <nav id="navbar" class="hidden fixed top-0  left-0 transform -translate-x-1/2  glass-navbar animate-slide-down  ">
+    <div class="flex justify-between items-center px-6 py-4">
+      <div class="text-3xl logo-3d">Green<span class="text-black">Den</span></div>
+      <ul class="hidden md:flex gap-8 text-lg">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">Products</a></li>
+        <li><a href="#" class="nav-link">About Us</a></li>
+        <li><a href="#" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="hamburger md:hidden z-50" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+<div id="side-menu" class="side-menu md:hidden">
+      <a href="#" class="block py-2 nav-link side-link">Home</a>
+      <a href="#" class="block py-2 nav-link side-link">Products</a>
+      <a href="#" class="block py-2 nav-link side-link">About Us</a>
+      <a href="#" class="block py-2 nav-link side-link">Contact Us</a>
+    </div>
+ <!-- 🌿 GreenDen Header Section -->
+`<div class="relative bg-gradient-to-br mt-32 from-emerald-50 to-green-100 rounded-lg shadow-xl p-6 md:p-12 flex flex-col md:flex-row items-center justify-around gap-8 ">
+  <!-- 🪴 Text Content -->
+  <div class="text-center md:text-left">
+    <p class="text-green-800 text-lg md:text-xl mb-2">We offer you a wide range of</p>
+    <p class="text-green-800 text-lg md:text-xl mb-4">Artificial and Natural Flowers</p>
+
+    <h2 class="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-emerald-400 to-green-700 typing-text">
+      Plants for your Interior
+    </h2>
+
+    <!-- 🌟 Buttons -->
+    <div class="flex flex-col md:flex-row gap-4 mt-6 justify-center md:justify-start">
+      <button class="animated-btn bg-green-600 text-white px-6 py-3 rounded-lg shadow-md font-bold "><span class="relative z-10">🌿 Shop Now</span></button>
+      <button class="animated-btn bg-white text-green-700 border border-green-600 px-6 py-3 rounded-lg shadow-md font-bold z-100"><span class="relative z-10">🎬 Watch Video</span></button>
+    </div>
+
+    <!-- 🌿 Info -->
+    <p class="text-gray-600 mt-6 text-sm">160+ plant species | 100+ Happy Clients</p>
+</div>
+<!-- 🌱 Floating Plant -->
+  <div class="animate-float">
+    <img src="images/plant2.png" alt="Plant" class="w-56 h-64 md:w-64 md:h-33 drop-shadow-2xl mb-5" />
+  </div>
+</div>
+<!-- ABOUT US SECTION -->
+<section class="py-16 px-4 text-center bg-white text-gray-800 " style="box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
+  <h1 class="text-4xl font-extrabold text-emerald-600 mb-4 fade-up">About Us</h1>
+  <p class="text-gray-700 max-w-xl mx-auto fade-up delay-200">
+    This site is for those who admire the beauty and harmony of nature. We bring greenery into your life with love.
+  </p>
+
+  <!-- Cards Container -->
+  <div class="mt-12 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    <!-- CARD 1 -->
+    <div class=" animated-border fade-up delay-300 ">
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="" className="size-5" class="w-20 h-20 inline-block">
+  <path fillRule="evenodd" d="M13.887 3.182c.396.037.79.08 1.183.128C16.194 3.45 17 4.414 17 5.517V16.75A2.25 2.25 0 0 1 14.75 19h-9.5A2.25 2.25 0 0 1 3 16.75V5.517c0-1.103.806-2.068 1.93-2.207.393-.048.787-.09 1.183-.128A3.001 3.001 0 0 1 9 1h2c1.373 0 2.531.923 2.887 2.182ZM7.5 4A1.5 1.5 0 0 1 9 2.5h2A1.5 1.5 0 0 1 12.5 4v.5h-5V4Z" clipRule="evenodd" />
+</svg>
+        <h2 class="text-xl font-bold text-emerald-700 mb-2">Large Assortment</h2>
+        <p class="text-gray-700">We offer a wide variety of natural and artificial plant products.</p>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="animated-border fade-up delay-500">
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="" className="size-5" class="w-20 h-20 inline-block">
+  <path fillRule="evenodd" d="M10 4.5c1.215 0 2.417.055 3.604.162a.68.68 0 0 1 .615.597c.124 1.038.208 2.088.25 3.15l-1.689-1.69a.75.75 0 0 0-1.06 1.061l2.999 3a.75.75 0 0 0 1.06 0l3.001-3a.75.75 0 1 0-1.06-1.06l-1.748 1.747a41.31 41.31 0 0 0-.264-3.386 2.18 2.18 0 0 0-1.97-1.913 41.512 41.512 0 0 0-7.477 0 2.18 2.18 0 0 0-1.969 1.913 41.16 41.16 0 0 0-.16 1.61.75.75 0 1 0 1.495.12c.041-.52.093-1.038.154-1.552a.68.68 0 0 1 .615-.597A40.012 40.012 0 0 1 10 4.5ZM5.281 9.22a.75.75 0 0 0-1.06 0l-3.001 3a.75.75 0 1 0 1.06 1.06l1.748-1.747c.042 1.141.13 2.27.264 3.386a2.18 2.18 0 0 0 1.97 1.913 41.533 41.533 0 0 0 7.477 0 2.18 2.18 0 0 0 1.969-1.913c.064-.534.117-1.071.16-1.61a.75.75 0 1 0-1.495-.12c-.041.52-.093 1.037-.154 1.552a.68.68 0 0 1-.615.597 40.013 40.013 0 0 1-7.208 0 .68.68 0 0 1-.615-.597 39.785 39.785 0 0 1-.25-3.15l1.689 1.69a.75.75 0 0 0 1.06-1.061l-2.999-3Z" clipRule="evenodd" />
+</svg>
+        <h2 class="text-xl font-bold text-emerald-700 mb-2">Fast Delivery</h2>
+        <p class="text-gray-700">Get your plants delivered fast and fresh to your doorstep.</p>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="animated-border  fade-up delay-700 ">
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition ">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="" className="size-5" class="w-20 h-20 inline-block">
+  <path d="M3.5 2A1.5 1.5 0 0 0 2 3.5V5c0 1.149.15 2.263.43 3.326a13.022 13.022 0 0 0 9.244 9.244c1.063.28 2.177.43 3.326.43h1.5a1.5 1.5 0 0 0 1.5-1.5v-1.148a1.5 1.5 0 0 0-1.175-1.465l-3.223-.716a1.5 1.5 0 0 0-1.767 1.052l-.267.933c-.117.41-.555.643-.95.48a11.542 11.542 0 0 1-6.254-6.254c-.163-.395.07-.833.48-.95l.933-.267a1.5 1.5 0 0 0 1.052-1.767l-.716-3.223A1.5 1.5 0 0 0 4.648 2H3.5ZM16.72 2.22a.75.75 0 1 1 1.06 1.06L14.56 6.5h2.69a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 1 1.5 0v2.69l3.22-3.22Z" />
+</svg>
+        <h2 class="text-xl font-bold text-emerald-700 mb-2">24/7 Support</h2>
+        <p class="text-gray-700">Always available for plant care and support anytime, anywhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Best Seller -->
+<section class="py-16 px-4 bg-black text-white">
+  <h1 class="font-bold mt-5 text-4xl text-center text-emerald-400 mb-10">Best Seller</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    
+ <div class="group relative bg-gray-900 rounded-xl overflow-hidden p-4 border-2 border-green-400 glow-hover" data-aos="flip-left" data-aos-duration="1000">
+      <img src="images/bplant3.png" alt="BPlant 4" class="w-full h-48 object-contain mb-2 transition-transform duration-500 ease-in-out group-hover:scale-105" />
+      <div class="absolute bottom-2 left-0 right-0 text-center">
+        <h2 class="card-title text-lg font-bold text-green-300 bg-black bg-opacity-50 py-2">Red Rose <br>$10</h2>
+      </div>
+    </div>
+
+    <div class="group relative bg-gray-900 rounded-xl overflow-hidden p-4 border-2 border-green-400 glow-hover" data-aos="flip-left" data-aos-duration="1000">
+      <img src="images/bplant2.png" alt="BPlant 4" class="w-full h-48 object-contain mb-2 transition-transform duration-500 ease-in-out group-hover:scale-105" />
+      <div class="absolute bottom-2 left-0 right-0 text-center">
+        <h2 class="card-title text-lg font-bold text-green-300 bg-black bg-opacity-50 py-2">pink rose <br>$60</h2>
+      </div>
+    </div>
+
+    <div class="group relative bg-gray-900 rounded-xl overflow-hidden p-4 border-2 border-green-400 glow-hover" data-aos="flip-left" data-aos-duration="1000">
+      <img src="images/green plant.png" alt="Mullu Chedi" class="w-full h-48 object-contain mb-2 transition-transform duration-500 ease-in-out group-hover:scale-105" />
+      <div class="absolute bottom-2 left-0 right-0 text-center">
+        <h2 class="card-title text-lg font-bold text-green-300 bg-black bg-opacity-50 py-2">Black leaf Plant <br>$30</h2>
+      </div>
+    </div>
+        <div class="group relative bg-gray-900 rounded-xl overflow-hidden p-4 border-2 border-green-400 glow-hover" data-aos="flip-left" data-aos-duration="1000">
+      <img src="images/sunflower.png" alt="Mullu Chedi" class="w-full h-48 object-contain mb-2 transition-transform duration-500 ease-in-out group-hover:scale-105" />
+      <div class="absolute bottom-2 left-0 right-0 text-center">
+        <h2 class="card-title text-lg font-bold text-green-300 bg-black bg-opacity-50 py-2">Sunflower<br>$30</h2>
+      </div>
+        </div>
+    <div class="group relative bg-gray-900 rounded-xl overflow-hidden p-4 border-2 border-green-400 glow-hover" data-aos="flip-left" data-aos-duration="1000">
+      <img src="images/bplant4 (1).png" alt="BPlant 4" class="w-full h-48 object-contain mb-2 transition-transform duration-500 ease-in-out group-hover:scale-105" />
+      <div class="absolute bottom-2 left-0 right-0 text-center">
+        <h2 class="card-title text-lg font-bold text-green-300 bg-black bg-opacity-50 py-2">Youcalyptus <br>$10</h2>
+      </div>
+    </div>
+
+    <div class="group relative bg-gray-900 rounded-xl overflow-hidden p-4 border-2 border-green-400 glow-hover" data-aos="flip-left" data-aos-duration="1000">
+      <img src="images/bplant4.png" alt="BPlant 4" class="w-full h-48 object-contain mb-2 transition-transform duration-500 ease-in-out group-hover:scale-105" />
+      <div class="absolute bottom-2 left-0 right-0 text-center">
+        <h2 class="card-title text-lg font-bold text-green-300 bg-black bg-opacity-50 py-2">yellow daisy <br>$60</h2>
+      </div>
+    </div>
+
+    <div class="group relative bg-gray-900 rounded-xl overflow-hidden p-4 border-2 border-green-400 glow-hover" data-aos="flip-left" data-aos-duration="1000">
+      <img src="images/mullu chedi.png" alt="Mullu Chedi" class="w-full h-48 object-contain mb-2 transition-transform duration-500 ease-in-out group-hover:scale-105" />
+      <div class="absolute bottom-2 left-0 right-0 text-center">
+        <h2 class="card-title text-lg font-bold text-green-300 bg-black bg-opacity-50 py-2">Mini Cactus <br>$30</h2>
+      </div>
+    </div>
+        <div class="group relative bg-gray-900 rounded-xl overflow-hidden p-4 border-2 border-green-400 glow-hover" data-aos="flip-left" data-aos-duration="1000">
+      <img src="images/pnneer rose.png" alt="Mullu Chedi" class="w-full h-48 object-contain mb-2 transition-transform duration-500 ease-in-out group-hover:scale-105" />
+      <div class="absolute bottom-2 left-0 right-0 text-center">
+        <h2 class="card-title text-lg font-bold text-green-300 bg-black bg-opacity-50 py-2">Rose <br>$30</h2>
+      </div>
+    </div>
+<style>
+  .glow-hover:hover {
+    box-shadow: 0 0 20px 4px rgba(0, 255, 100, 0.5);
+    transform: scale(1.05) rotate(1deg);
+  }
+
+  .card-title {
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+  }
+
+  .group:hover .card-title {
+    transform: translateY(0%);
+    opacity:1;
+}
+</style>
+<script>
+  AOS.init();
+</script>
+  </div>
+</section>
+<!-- Carousel Section -->
+<section class="bg-[#0f291e] py-16 px-4 text-white">
+  <h2 class="text-3xl font-bold text-center text-green-400 mb-10">Customer Reviews</h2>
+
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper max-w-6xl mx-auto">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide bg-[#14532d] p-6 rounded-xl shadow-lg border border-green-600 transform hover:scale-105 duration-300">
+        <p class="mb-4">I recently purchased a few plants from GreenDen and the experience was truly delightful. The packaging was neat, the plants were fresh, and the delivery was on time. I appreciate their dedication to nature.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">- Aisha Noor</span>
+          <div class="flex gap-1 text-yellow-400 text-lg">
+            ⭐⭐⭐⭐☆
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide bg-[#14532d] p-6 rounded-xl shadow-lg border border-green-600 transform hover:scale-105 duration-300">
+        <p class="mb-4">GreenDen exceeded my expectations. Not only do they offer a wide variety of plants, but the customer support is friendly and helpful. I had a few queries and they responded instantly with solutions.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">- Rahman Yusuf</span>
+          <div class="flex gap-1 text-yellow-400 text-lg">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide bg-[#14532d] p-6 rounded-xl shadow-lg border border-green-600 transform hover:scale-105 duration-300">
+        <p class="mb-4">The quality of the plants I received was outstanding. I loved the freshness and care taken in packaging. It’s wonderful to see such commitment to eco-friendly practices and customer satisfaction.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">- Meena Suresh</span>
+          <div class="flex gap-1 text-yellow-400 text-lg">
+            ⭐⭐⭐⭐☆
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide bg-[#14532d] p-6 rounded-xl shadow-lg border border-green-600 transform hover:scale-105 duration-300">
+        <p class="mb-4">As a first-time plant buyer, I was nervous. But GreenDen made everything easy with guidance, safe delivery, and a beautiful website. My plants are thriving and I will definitely order more soon.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">- Shanaya Iqbal</span>
+          <div class="flex gap-1 text-yellow-400 text-lg">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="swiper-slide bg-[#14532d] p-6 rounded-xl shadow-lg border border-green-600 transform hover:scale-105 duration-300">
+        <p class="mb-4">I have shopped at multiple plant stores online, but GreenDen stands out. Their packaging is eco-conscious, and the support team is knowledgeable. I love their passion for greenery and sustainability.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">- Vishal Dev</span>
+          <div class="flex gap-1 text-yellow-400 text-lg">
+            ⭐⭐⭐⭐☆
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="swiper-slide bg-[#14532d] p-6 rounded-xl shadow-lg border border-green-600 transform hover:scale-105 duration-300">
+        <p class="mb-4">GreenDen has become my go-to for all plant purchases. The plants are healthy and vibrant. Their customer-first approach truly makes every order feel special. Highly recommended to every nature lover.</p>
+        <div class="flex justify-between items-center">
+          <span class="text-yellow-400 font-bold">- Liyana Zahir</span>
+          <div class="flex gap-1 text-yellow-400 text-lg">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="swiper-pagination mt-10 !relative !bottom-auto "></div>
+  </div>
+  <!-- CTA Section -->
+<section id="cta" class="relative py-40 px-4 overflow-hidden bg-cover bg-center" style="background-image: url('images/ctabg.jpg');">
+  
+  <!-- CTA Card -->
+  <div class="cta max-w-3xl mx-auto mt-32 text-center  z-10 relative">
+      <img src="images/pot1.png" alt="Pot Left" class="pot absolute left-6 -top-14 z-20 transition-all duration-1000 ease-in-out"style="width: 100px;" />
+  <img src="images/pot2.png" alt="Pot Center" class="pot absolute left-1/3 -top-16  -translate-x-1/2 -z-20 transition-all duration-1000 ease-in-out " style="width: 200px;"/>
+  <img src="images/pot3.png" alt="Pot Right" class="pot absolute -right-7 -top-16 z-20 transition-all duration-1000 ease-in-out" style="width: 200px;"/>
+
+    <h2 class="text-4xl font-extrabold text-emerald-300 mb-4 drop-shadow mt-10 relative z-10">Bring Nature Into Your Life</h2>
+    <p class="text-white text-lg md:text-xl font-medium mb-6  relative z-10 ">
+      Add freshness and calmness to your space with our beautiful indoor plants. Crafted with care to enhance your environment and uplift your mood every day.
+    </p>
+    <button class=" animated-btn bg-green-600 text-white px-6 py-3 rounded-lg shadow-md font-bold ">
+<span class="relative z-10">🌿 Shop Now</span>
+    </button>
+  </div>
+</section>
+<style>
+  .pot {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  .pot.revealed {
+    transform: translateY(50px);
+    opacity:1;
+}
+.cta{
+    box-shadow: 0px 8px 32px 0 rgba(122, 204, 142, 0.37);
+background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgb(42, 75, 22);
+  padding: 3rem;
+}
+</style>
+<script>
+  const ctaObserverAlt = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const pots = document.querySelectorAll('.pot');
+      if (entry.isIntersecting) {
+        pots.forEach(pot => pot.classList.add('revealed'));
+      } else {
+        pots.forEach(pot => pot.classList.remove('revealed'));
+      }
+    });
+  }, { threshold: 0.5 });
+
+  const ctaSection = document.getElementById('cta');
+  if (ctaSection) ctaObserverAlt.observe(ctaSection);
+</script>
+<!-- Swiper JS Initialization -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+</script>
+
+<style>
+  .swiper-pagination{
+    position: static !important;
+    margin-top: 10px !important;
+  }
+  .swiper-pagination-bullet {
+    background-color: #10b981 !important;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+    transition: transform 0.3s;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #22c55e !important;
+    transform: scale(1.3);
+    opacity: 1;
+    box-shadow: 0 0 10px #22c55e;
+}
+  </style>
+<!-- Newsletter Section -->
+<section class="text-center py-16 px-4 bg-gradient-to-br from-green-700 via-emerald-600 to-lime-600 text-white w-full">
+  <h1 class="text-4xl font-extrabold mb-3">Join Our Newsletter</h1>
+  <p class="mb-6 text-lg">Subscribe for exclusive discounts, updates, and more delivered right to your inbox!</p>
+  
+  <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+    <input type="email" placeholder="Enter your email"
+      class="w-11/12 sm:w-[400px] px-4 py-3 rounded-full shadow-md text-black focus:outline-none focus:ring-2 focus:ring-lime-300">
+    <button
+      class="px-6 py-3 rounded-full bg-white text-green-800 font-semibold hover:bg-green-200 hover:scale-105 transition-all duration-300 shadow-md">Subscribe</button>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<section class="bg-green-200 text-green-900 py-10 px-6 text-center">
+  <h1 class="text-3xl font-bold mb-3">Greenden</h1>
+  <p class="max-w-2xl mx-auto text-lg">Greenden is your trusted source for vibrant, healthy plants. Let nature breathe new life into your space with us.</p>
+  <p class="mt-6 text-sm text-green-800">© 2025 Greenden.com | All rights reserved.</p>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
